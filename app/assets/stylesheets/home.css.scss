@@ -1,0 +1,120 @@
+
+body {
+	font-family: "proxima-nova", verdana, arial, helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.intro {
+	background: image-url("intro-cover.png") no-repeat center center;
+	height: 560px;
+	color: #fff;
+	position: relative;
+
+	.contact {
+		padding: 25px;
+
+		p {
+			float:right;
+			font-weight: 400;
+			font-size: 17px;
+		}
+
+		p:first-child {
+			padding-left: 40px;
+		}
+	}
+
+	.logo {
+		width:auto;
+		height: auto;
+		display: block;
+		margin: 80px auto 0 auto;
+	}
+
+	.newsletter {
+		height: 110px;
+		width: 100%;
+		background-color: rgba(41, 43, 51, 0.4);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		.text {
+			font-weight: 400;
+			font-size: 18;
+			float: left;
+			margin-top: 40px;
+		}
+
+		input {
+			width: 300px;
+			height: 44px;
+			float: left;
+			margin-top: 33px;
+			margin-left: 50px;
+			$br: 3px;
+			-webkit-border-top-left-radius: $br; 
+ 			-moz-border-top-left-radius: $br; 
+  			border-top-left-radius: $br; 
+  			-webkit-border-bottom-left-radius: $br; 
+ 			-moz-border-bottom-left-radius: $br;
+  			border-bottom-left-radius: $br; 
+		}
+
+		.button-blue{
+			margin-top: 33px;
+			float: left; 
+			height: 44px;
+			width: 140px;
+			color: #fff;
+			background-color: #25a6e9;
+			padding: 13px 0 10px 0;
+			$br: 3px;
+			-webkit-border-top-right-radius: $br; 
+ 			-moz-border-top-right-radius: $br; 
+  			border-top-right-radius: $br; 
+  			-webkit-border-bottom-right-radius: $br; 
+ 			-moz-border-bottom-right-radius: $br;
+  			border-bottom-right-radius: $br; 
+  			text-align: center;
+  			font-weight: 600;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: .03em;
+			text-shadow: 1px 1px rgba(41, 43, 51, 0.2);
+			cursor: pointer;
+		}
+	}
+}
+
+.representing {
+	height: 600px;
+
+	h2 {
+		color: #4a4a4a;
+		font-size: 42px;
+		padding-bottom: 45px;
+		padding-top: 75px;
+		border-bottom: 1px solid #c4c4c4;
+		width: 100%;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.company-logo {
+		width: auto;
+		margin: 0 auto 0 auto;
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	.orion {
+		margin-top: 20px;
+	}
+}
+
+
+.contact-area {
+	background: image-url("footer-cover.png") no-repeat center center;
+	height: 450px;
+}
