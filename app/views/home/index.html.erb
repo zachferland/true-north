@@ -3,8 +3,8 @@
 
 	<div class="row">
 	  <div class="large-5 large-offset-7 columns contact">
-	  	<p>508-971-0212</p>
 	  	<p>truenorthflow@comcast.net</p>
+	  	<p class="name">Ray Ferland</p>
 	  </div>
 	</div>
 	
@@ -15,24 +15,36 @@
 	</div>
 	
 	<div class="newsletter">
+
+
+
+
+
 		<div class="row">
 		  	<div class="small-12 large-centered  large-12 columns">
-		  	<div class="small-12 large-7 small-centered large-uncentered columns">
-		  		<p class="text">Enter your email to recieve monthly product and company updates.</p>
-		  	</div>
+		  		<div class="small-12 large-7 small-centered large-uncentered columns">
+		  			<p class="text">Enter your email to recieve monthly product and company updates.</p>
+		  		</div>
+		  		<div class="small-12 large-5  small-centered large-uncentered columns">
+					<div class="email-input">
 
-		  	<div class="small-12 large-5  small-centered large-uncentered columns">
+						<%= form_for @user = User.new, :url => user_path(@user), :html => { :method => :post } do |f| %>
+							<span class="email-icon"></span>
+							<%= f.text_field :email, :placeholder => "your@email.com" %>
+							<%= f.submit "Submit", :class => "button-blue" %>
+						<% end %>
 
-				<div class="email-input">
-					<span class="email-icon"></span>
-					<input type="text" placeholder="your@email.com"> 
-					<div class="button-blue"> Submit</div>
+					</div>
 				</div>
-
-			</div>
-
 		  	</div>
 		</div>
+
+
+
+
+
+
+
 	</div>
 </section>
 

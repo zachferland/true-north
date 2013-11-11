@@ -10,6 +10,10 @@ h2, h3, h4, h5, h6, p {
 	-webkit-font-smoothing: antialiased;
 }
 
+form {
+margin: 0 0 0 0;
+}
+
 input, textarea, select, a { outline-color: transparent;
   outline-style: none; }
 
@@ -33,7 +37,11 @@ input, textarea, select, a { outline-color: transparent;
 		}
 
 		p:first-child {
-			padding-left: 40px;
+			padding-left: 25px;
+		}
+
+		.name {
+			font-weight: 600;
 		}
 	}
 
@@ -112,11 +120,14 @@ input, textarea, select, a { outline-color: transparent;
  				-moz-border-bottom-right-radius: $br;
   				border-bottom-right-radius: $br; 
   				text-align: center;
-  				font-weight: 600;
+  				font-weight: 300;
 				font-size: 15px;
 				letter-spacing: .03em;
 				text-shadow: 1px 1px rgba(41, 43, 51, 0.1);
 				cursor: pointer;
+
+				-webkit-appearance: none;
+				font: inherit;
 			}
 	
 		}

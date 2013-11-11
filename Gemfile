@@ -11,7 +11,11 @@ gem 'rails', '4.0.0'
 
 gem 'pg'
 
-gem 'compass-rails', '~> 1.0.3' # you need this or you get an err
+# gem 'constantcontact'
+
+gem "figaro"
+
+gem 'compass'  # you need this or you get an err
   gem 'zurb-foundation', '~> 4.3.2'
 
 # Use SCSS for stylesheets
