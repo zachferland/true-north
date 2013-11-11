@@ -1,5 +1,6 @@
 
 
+
 body {
 	font-family: "proxima-nova", verdana, arial, helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -137,6 +138,13 @@ input, textarea, select, a { outline-color: transparent;
 		margin: 0 auto 0 auto;
 		margin-top: 60px;
 		text-align: center;
+		
+		:hover img {
+		  opacity: .8;
+		  -ms-filter: "alpha(opacity=80)";
+		  filter: alpha(opacity=80)
+		}
+
 	}
 
 	.orion {
@@ -185,3 +193,4 @@ input, textarea, select, a { outline-color: transparent;
 		font-size: 14px;
 	}
 }
+
