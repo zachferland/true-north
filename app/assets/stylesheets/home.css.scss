@@ -1,11 +1,19 @@
 
+
 body {
 	font-family: "proxima-nova", verdana, arial, helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
+input, textarea, select, a { outline-color: transparent;
+  outline-style: none; }
+
 .intro {
 	background: image-url("intro-cover.png") no-repeat center center;
+	 -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	height: 560px;
 	color: #fff;
 	position: relative;
@@ -28,44 +36,68 @@ body {
 		width:auto;
 		height: auto;
 		display: block;
-		margin: 80px auto 0 auto;
+		margin: 16% auto 0 auto;
 	}
 
 	.newsletter {
-		height: 110px;
+		height: auto;
 		width: 100%;
 		background-color: rgba(41, 43, 51, 0.4);
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		padding-bottom: 20px;
 
 		.text {
 			font-weight: 400;
 			font-size: 18;
 			float: left;
-			margin-top: 40px;
+			margin-top: 42px;
 		}
 
-		input {
-			width: 300px;
-			height: 44px;
-			float: left;
-			margin-top: 33px;
-			margin-left: 50px;
-			$br: 3px;
-			-webkit-border-top-left-radius: $br; 
- 			-moz-border-top-left-radius: $br; 
-  			border-top-left-radius: $br; 
-  			-webkit-border-bottom-left-radius: $br; 
- 			-moz-border-bottom-left-radius: $br;
-  			border-bottom-left-radius: $br; 
+		.email-input {
+
+			.email-icon {
+				float: left;
+				background: image-url("email-icon.png") no-repeat center center;
+				margin-top: 36px;
+				height: 38px;
+				background-color: #FFF;
+				width: 50px;
+				$br: 3px;
+				-webkit-border-top-left-radius: $br; 
+ 				-moz-border-top-left-radius: $br; 
+  				border-top-left-radius: $br; 
+  				-webkit-border-bottom-left-radius: $br; 
+ 				-moz-border-bottom-left-radius: $br;
+  				border-bottom-left-radius: $br; 
+  				border: none;
+			}
+			input {
+				width: 54%;
+				height: 38px;
+				float: left;
+				margin-top: 36px;
+				webkit-box-shadow: none;
+				box-shadow: none;
+				border: none;
+				color: #4a4a4a;
+				font-weight: 400;
+
+			}	
+
 		}
+
+		.button-blue:hover {
+			background-color: darken(#25a6e9, 6%);
+		}
+
 
 		.button-blue{
-			margin-top: 33px;
+			margin-top: 36px;
 			float: left; 
-			height: 44px;
-			width: 140px;
+			height: 38px;
+			width: 106px;
 			color: #fff;
 			background-color: #25a6e9;
 			padding: 13px 0 10px 0;
@@ -78,17 +110,16 @@ body {
   			border-bottom-right-radius: $br; 
   			text-align: center;
   			font-weight: 600;
-			font-size: 16px;
-			text-transform: uppercase;
+			font-size: 15px;
 			letter-spacing: .03em;
-			text-shadow: 1px 1px rgba(41, 43, 51, 0.2);
+			text-shadow: 1px 1px rgba(41, 43, 51, 0.1);
 			cursor: pointer;
 		}
 	}
 }
 
 .representing {
-	height: 600px;
+	height: 780px;
 
 	h2 {
 		color: #4a4a4a;
@@ -111,10 +142,46 @@ body {
 	.orion {
 		margin-top: 20px;
 	}
+
+	.eastech {
+		margin-top: 60px;
+	}
 }
 
 
 .contact-area {
-	background: image-url("footer-cover.png") no-repeat center center;
-	height: 450px;
+	background: image-url("footer-cover.png") repeat-y center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: auto;
+	padding-top: 100px;
+	color: #fff;
+
+	h2, h3, p {
+		color: #fff;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-size: 39px;
+		margin-top: 80px;
+	}
+
+	h3 {
+		border-bottom: 1px solid #fff;
+		width: 90%;
+		padding-bottom: 10px;
+	}
+
+	.contact-box {
+		height: 130px;
+	}
+
+	.copyright p {
+		float: right;
+		margin-top: 40px;
+		font-size: 14px;
+	}
 }
