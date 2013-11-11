@@ -63,7 +63,7 @@ input, textarea, select, a { outline-color: transparent;
 
 		.text {
 			font-weight: 400;
-			font-size: 18;
+			font-size: 17px;
 			float: left;
 			margin-top: 42px;
 		}
@@ -188,9 +188,13 @@ input, textarea, select, a { outline-color: transparent;
 		color: #fff;
 	}
 
+	p {
+		font-size: 17px;
+	}
+
 	h2 {
 		font-weight: 400;
-		font-size: 39px;
+		font-size: 45px;
 		margin-top: 80px;
 	}
 
